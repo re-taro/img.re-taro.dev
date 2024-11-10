@@ -1,9 +1,13 @@
 {
   "changelog-path": "CHANGELOG.md",
   "packages": {
-    "packages/bot": {
+    "packages/app": {
       "release-type": "node",
       "package-name": "img.re-taro.dev"
+    },
+    "packages/wasm": {
+      "release-type": "node",
+      "package-name": "image-optimizer"
     }
   }
 }
