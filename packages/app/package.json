@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.12.3",
+  "description": "My personal image optimizer API",
+  "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro/img.re-taro.dev",
+    "directory": "app"
+  },
+  "scripts": {
+    "build": "wrangler deploy --dry-run --minify --outdir dist",
+    "fmt": "pnpm run lint --fix",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "start": "wrangler dev"
+  },
+  "dependencies": {
+    "@re-taro/image-optimizer": "workspace:*",
+    "hono": "4.6.9"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20241106.0",
+    "vitest": "2.0.5",
+    "wrangler": "3.86.0"
+  }
+}

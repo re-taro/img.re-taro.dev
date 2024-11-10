@@ -1,0 +1,32 @@
+{
+  "name": "@re-taro/image-optimizer",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.12.3",
+  "description": "My personal image optimizer",
+  "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro/img.re-taro.dev",
+    "directory": "wasm"
+  },
+  "exports": {
+    ".": {
+      "default": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "fmt": "pnpm run lint --fix",
+    "build": "pnpm run build:wasm && pnpm run build:js && cpy out/**/* dist",
+    "build:js": "tsc",
+    "build:wasm": "docker compose -f docker/compose.yml run --build --rm emcc make -j"
+  },
+  "devDependencies": {
+    "cpy-cli": "5.0.0"
+  }
+}
