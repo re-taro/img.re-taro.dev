@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 WORKDIR=work
-DISTDIR=dist
+DISTDIR=out
 LIBDIR=libavif/ext
 
 TARGET_ESM_BASE = $(notdir $(basename src/optimizer.cpp))

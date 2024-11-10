@@ -22,8 +22,11 @@
   "scripts": {
     "lint": "eslint .",
     "fmt": "pnpm run lint --fix",
-    "build": "pnpm run build:wasm && pnpm run build:js",
+    "build": "pnpm run build:wasm && pnpm run build:js && cpy out/**/* dist",
     "build:js": "tsc",
     "build:wasm": "docker compose -f docker/compose.yml run --build --rm emcc make -j"
+  },
+  "devDependencies": {
+    "cpy-cli": "5.0.0"
   }
 }
