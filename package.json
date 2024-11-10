@@ -1,0 +1,26 @@
+{
+  "name": "img.re-taro.dev",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.12.3",
+  "description": "My personal image optimizer monorepo",
+  "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro/img.re-taro.dev"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter=./packages/* build",
+    "fmt": "pnpm -r --parallel --filter=./packages/* fmt",
+    "lint": "pnpm -r --parallel --filter=./packages/* lint",
+    "test": "pnpm -r --parallel --filter=./packages/* test",
+    "start": "pnpm -r --filter=./packages/app start"
+  },
+  "devDependencies": {
+    "@re-taro/eslint-config": "5.2.1",
+    "eslint": "9.14.0",
+    "eslint-plugin-format": "0.1.2",
+    "typescript": "5.6.3"
+  }
+}
