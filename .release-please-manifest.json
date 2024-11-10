@@ -1,4 +1,6 @@
 {
   "img.re-taro.dev": "0.0.0",
-  "image-optimizer": "0.0.0"
+  "image-optimizer": "0.0.0",
+  "packages/app": "1.0.0",
+  "packages/wasm": "1.0.0"
 }
