@@ -2,7 +2,7 @@
   "name": "img.re-taro.dev",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.14.1",
+  "packageManager": "pnpm@9.14.2",
   "description": "My personal image optimizer monorepo",
   "author": "Rintaro Itokawa <me@re-taro.dev> (https://re-taro.dev)",
   "license": "MIT",
