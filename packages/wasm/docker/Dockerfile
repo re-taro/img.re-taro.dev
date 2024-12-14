@@ -1,4 +1,4 @@
-FROM emscripten/emsdk:3.1.73
+FROM emscripten/emsdk:3.1.74
 WORKDIR /app
 RUN  apt-get update && apt-get install -y dh-autoreconf ninja-build yasm &&\
   git clone https://github.com/webmproject/libwebp &&\
