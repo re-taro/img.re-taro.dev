@@ -27,8 +27,8 @@ importers:
         specifier: workspace:*
         version: link:../wasm
       hono:
-        specifier: 4.6.13
-        version: 4.6.13
+        specifier: 4.9.6
+        version: 4.9.6
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20241205.0
@@ -441,6 +441,7 @@ packages:
 
   '@eslint-react/tools@1.17.1':
     resolution: {integrity: sha512-0ZUw3PF70qeBMJLrntmojQLGzy5S05fwor5CxrHIp1MwQoPTphX11WiuCuq5ohHZ+xopqLHASkRrvAPthAalUQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@eslint-react/types@1.17.1':
     resolution: {integrity: sha512-jf9kkRRnV65wCQPdVIGBa81VH4CbN/qULSg6YnErKd4Kgbq6l8Sh54lY8Qlo1jj2LHtzo/nACdyWx1aOgkyuDg==}
@@ -1165,6 +1166,7 @@ packages:
   eslint-plugin-markdown@5.1.0:
     resolution: {integrity: sha512-SJeyKko1K6GwI0AN6xeCDToXDkfKZfXcexA6B+O2Wr2btUS9GrC+YgwSyVli5DJnctUHjFXcQ2cqTaAmVoLi2A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: Please use @eslint/markdown instead
     peerDependencies:
       eslint: '>=8'
 
@@ -1445,8 +1447,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.6.13:
-    resolution: {integrity: sha512-haV0gaMdSjy9URCRN9hxBPlqHa7fMm/T72kAImIxvw4eQLbNz1rgjN4hHElLJSieDiNuiIAXC//cC6YGz2KCbg==}
+  hono@4.9.6:
+    resolution: {integrity: sha512-doVjXhSFvYZ7y0dNokjwwSahcrAfdz+/BCLvAMa/vHLzjj8+CFyV5xteThGUsKdkaasgN+gF2mUxao+SGLpUeA==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@2.8.9:
@@ -3694,7 +3696,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.6.13: {}
+  hono@4.9.6: {}
 
   hosted-git-info@2.8.9: {}
 
